@@ -1,0 +1,499 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#interface {
+    display: block;
+    width: 100%;
+    height: 3062px;
+
+    background: #0A1612;
+}
+
+header{
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 94px;
+    justify-content: center;
+    padding: 30px;
+
+    background: #F7CE3E;
+    border-bottom: 10px solid #FEFEFE;    
+}
+
+ul#ops {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+
+    list-style: none;
+    text-transform: uppercase;
+}
+
+ul#redes {
+    display: block;
+    position: absolute;
+    left: 940px;
+    top: 22px;
+}
+
+ul#redes img {
+    margin-right: 50px;
+    height: 40px;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+    color: #fefefe;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+span#inicio {
+    margin-top: 150px;
+    cursor: pointer;
+    color: #fefefe;
+    transition: color 0.2s;
+}
+
+span#inicio:hover {
+    color: #0A1612;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu li:hover {
+    color: #0A1612;
+}
+
+h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+div#foto {
+    background-image: url(../_fotos/andréP.jpg);
+    background-position-x: center;
+    background-position-y: -7px;
+    background-size: 99.9%;
+    position: absolute;
+    width: 186.85px;
+    height: 186.85px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 19px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+article#sobreMim div#texto {
+    position: absolute;
+    width: 704px;
+    height: 320px;
+    left: 5%;
+    top: 261px;
+    
+    background: #1A2930;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px; 
+    
+    color: #FFFFFF;
+}
+
+div#texto p{
+    position: absolute;
+    width: 660px;
+    height: 235px;
+    left: 3%;
+    top: 89px;
+}
+
+div#texto h1{
+    position: absolute;
+    width: 274px;
+    height: 43px;
+    left: 3%;
+    top: 20px;
+}
+
+img#rock {
+    background-image: url(../_fotos/rock.jpeg);
+    background-position-x: center;
+    background-size: 99.9%;
+    border: 10px solid #FEFEFE;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(10.44deg);
+    
+    position: absolute;
+    width: 250px;
+    height: 206px;
+    left: 890.32px;
+    top: 356px;
+}
+
+img#nickRengar {
+    background-image: url(../_fotos/nick\ e\ renga.jpeg);
+    background-position-x: center;
+    background-size: 99.9%;
+    border: 10px solid #FEFEFE;
+    box-sizing: border-box;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(-14.23deg);
+    
+    position: absolute;
+    width: 194px;
+    height: 260px;
+    left: 1071px;
+    top: 277px;
+}
+
+article#tecnologias {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 530px;
+    top: 730px;
+
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+article#jogos {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 620px;
+    top: 1360px;
+    
+    background: #F7CE3E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+article#musicas {
+    position: absolute;
+    width: 100%;
+    height: 525px;
+    background-color: #FEFEFE;
+    top: 2090px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+div#block {
+    position: absolute;
+    width: 480px;
+    height: 537px;
+    left: 60%;
+    top: 24px;
+
+    color: #FEFEFE;    
+    background: #1A2930;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+div#gif {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    height: 45%;
+    background-image: url(../_fotos/noneG.gif);       
+    background-position-x: center;
+    background-size: 99.9%;
+
+    transition: background-image 1s;
+    text-align: center;
+}
+
+div#info {
+    border-top: solid 2px #FEFEFE;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+
+    transition: all 1s;
+}
+
+
+div#info p {
+    text-align: left;
+    width: 429px;
+    height: 243px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1#secao {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    top: 10px;
+    text-align: center;
+    line-height: 100%;
+    color: #0A1612;
+}
+
+img#web {
+    position: absolute;
+    left: 33%;
+    top: 60%;
+}
+
+img#python {
+    position: absolute;
+    left: 13%;
+    top: 45%;
+}
+
+img#git {
+    position: absolute;
+    left: 75%;
+    top: 45%;
+}
+
+img#java {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+img#c {
+    position: absolute;
+    left: 33%;
+    top: 20%;
+}
+
+img#nfs {
+    width: 220px;
+    height: 252px;   
+    background-image: url(../_fotos/nfsheatP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#rdr2 {
+    width: 220px;
+    height: 252px;
+    
+    background-image: url(../_fotos/rdr2P.jpg);       
+    background-position-x: center;
+    background-position-y: 15%;
+    background-size: 99.9%;
+     
+}
+
+img#hellblade {
+    width: 220px;
+    height: 252px;   
+    background-image: url(../_fotos/hellbladeP.jpg);       
+    background-position-x: center;
+    background-position-y: 80%;
+    background-size: 99.9%; 
+}
+
+img#fh4 {
+    width: 220px;
+    height: 252px;
+    background-image: url(../_fotos/forzaHorizon4P.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#lis {
+    width: 220px;
+    height: 252px;   
+    background-image: url(../_fotos/lisTrueColorsP.png);       
+    background-position-x: center;
+    background-size: 110%; 
+   }
+
+img#ds3 {
+
+    width: 220px;
+    height: 252px;
+    background-image: url(../_fotos/darkSouls3P.png);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#unholyWar {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/unholyWarP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#jason {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/jasonP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#localNatives {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/localNativesP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#iRan {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/iRanP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#farAway {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/farAwayP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#disturbed {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/disturbedP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#bedOfRoses {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/bedOfRosesP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+img#whenYouWereYoung {
+    width: 200px;
+    height: 200px;   
+    background-image: url(../_fotos/whenYouWereYoungP.jpg);       
+    background-position-x: center;
+    background-size: 99.9%; 
+}
+
+article#tecnologias img {
+    -webkit-filter: drop-shadow(0px 2px 2px #222);
+    filter: drop-shadow(0px 1px 1px #222);
+}
+
+hgroup#tecs {
+    display: block;
+}
+
+hgroup#capas{
+    position: absolute;
+
+    top: 56px;
+    left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 800px;
+    height: 550px;
+}
+
+hgroup#capas img {
+    border: solid 1px #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+hgroup#capas img:hover {
+    border: #FEFEFE 3px solid;
+}
+
+hgroup#capasM {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 95px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    height: 440px;
+    width: 100%;
+}
+
+hgroup#capasM img {
+    border: solid 3px #1A2930;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+hgroup#capasM img:hover {
+    border: solid 8px #1A2930;
+}
+
+div#fim {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2690px;
+    align-items: center;
+    color: #1A2930;
+
+    -webkit-filter: drop-shadow(0px 5px 5px #222);
+    filter: drop-shadow(0px 5px 5px #222);
+}
+
+div#fim h1 {
+    text-align: center;
+    width: 498px;
+    background: #FEFEFE;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+img#fimGif {
+    background-repeat: no-repeat;
+    width: 498px;
+    height: 278px;   
+    background-image: url(../_fotos/fimG.gif);       
+    background-position-x: center;
+    background-size: 100%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border: solid 7px #FEFEFE;
+}

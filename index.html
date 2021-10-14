@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofólio</title>
+    <link rel= "stylesheet" type= "text/css" href= "./_css/main.css"/>
+    <script src="./_js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() < 100) {
+                $('#foto').fadeIn();            
+            } else {
+                $('#foto').fadeOut();
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id= interface>
+        <header id="cab">
+            <nav id="menu">
+                <ul id="ops" type= "disk" style="font-family: 'Gemunu Libre', sans-serif; font-weight: bolder; font-size: 25px;">
+                    <li onclick="window.scroll(0,620)">Tecnologias</li>
+                    <li onclick="window.scroll(0,1275)">Jogos</li>
+                    <li onclick="window.scroll(0,1975)">Músicas</li>
+                </ul>
+                <span onclick="window.scroll(0,0)" id="inicio" style="font-family: 'Gemunu Libre', sans-serif; font-weight: bolder; font-size: 30px;">Início</span>
+                <ul id= "redes" type= "disk">
+                    <a href="https://www.instagram.com/4ndr3wz/" target="_blank"><img src="./_fotos/instagramB.png"></a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-vinicius-santos-de-lima-773635213/" target="_blank"><img src="./_fotos/linkedinB.png"></a>
+                    <a href="https://www.facebook.com/andrevinicius.santosdelima/" target="_blank"><img src="./_fotos/facebookB.png"></a>
+                </ul>
+            </nav>
+            <div id="foto"></div>
+        </header>
+
+        <article id="sobreMim">
+            <div id="texto">
+                <h1>Quem sou eu?</h1>
+                <p>Olá, eu sou André Vinicius, nasci e habito a cidade a cidade de Limoeiro do Norte, entrei na UFC no semestre 2019.1 no curso de Engenharia de Software. Minha parte favorita na área da TI é a parte de programação, e atualmente estou buscando aumentar meus conhecimentos na área web, aprendendo Javascript, e também estou buscando começar a ganhar conhecimento sobre o ambiente do mercado de trabalho. Sou dono de uma fera abobalhada chamada de Rock (o qual não se dá muito bem com a presidente da empresa), e de dois bujões adormecidos chamados de Nick e Rengar. As coisas que mais gosto é de jogos (principalmente de corridas) e músicas no geral. </p>
+            </div>
+            <img id="nickRengar">
+            <img id="rock">
+        </article>
+        
+        <article id="tecnologias">
+            <h1 id="secao">Tecnologias as quais tenho conhecimento</h1>
+            <hgroup id="tecs">
+                <img id="web" src="./_fotos/html5P.png">
+                <img id="python" src="./_fotos/pythonP.png">
+                <img id="git" src="./_fotos/githubP.png">
+                <img id="c" src="./_fotos/cP.png">
+                <img id="java" src="./_fotos/javaP.png">
+            </hgroup>
+        </article>
+
+        <article id="jogos">
+            <h1 id="secao">Jogos</h1>
+            <hgroup id="capas">
+                <img onclick= "clicked()" id="nfs">
+                <img onclick= "clicked()" id="ds3">
+                <img onclick= "clicked()" id="lis">
+                <img onclick= "clicked()" id="hellblade">
+                <img onclick= "clicked()" id="fh4">
+                <img onclick= "clicked()" id="rdr2">
+            </hgroup>
+
+            <div id="block">
+                <div id="gif"></div>
+            
+                <div id="info">
+                    <h2 style="font-family: 'Roboto Condensed', sans-serif;">Descrição</h2>
+                    <p><br>&lt;&lt;Clique em um jogo&gt;&gt;</p>
+                </div>
+            </div>
+        </article>
+        
+        <article id="musicas">
+            <h1 id="secao">Músicas</h1>
+            
+            <hgroup id="capasM">
+                <img onmouseover="tocar()" id= "unholyWar">
+                <img onmouseover="tocar()" id= "localNatives">
+                <img onmouseover="tocar()" id= "jason">
+                <img onmouseover="tocar()" id= "iRan">
+                <img onmouseover="tocar()" id= "farAway">
+                <img onmouseover="tocar()" id= "disturbed">
+                <img onmouseover="tocar()" id= "bedOfRoses">
+                <img onmouseover="tocar()" id= "whenYouWereYoung">
+            </hgroup>
+        </article>
+
+        <div id="fim">
+            <h1>Obrigado pela atenção</h1>
+            <img id="fimGif">
+        </div>
+    </div>
+</body>
+</html>
